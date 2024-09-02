@@ -10,5 +10,5 @@ spec:
   type: service
   owner: user:guest
   lifecycle: experimental
-  # dependsOn:
-  #   - resource:crossplane-eks-demo-05
+  dependsOn:
+    - resource:crossplane-eks-demo-05
