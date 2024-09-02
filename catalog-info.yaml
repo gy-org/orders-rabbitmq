@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: orders-rabbitmq
+  annotations:
+    github.com/project-slug: gy-org/orders-rabbitmq
+    backstage.io/kubernetes-label-selector: 'app=orders-rabbitmq'
+  description: orders-rabbitmq created
+spec:
+  type: service
+  owner: user:guest
+  lifecycle: experimental
+  # dependsOn:
+  #   - resource:crossplane-eks-demo-05
