@@ -43,6 +43,7 @@ spec:
     app.kubernetes.io/instance: orders
     app.kubernetes.io/component: rabbitmq
 ---
+
 # Source: orders/templates/rabbitmq-statefulset.yaml
 apiVersion: apps/v1
 kind: StatefulSet
@@ -88,6 +89,3 @@ spec:
       volumes:
       - name: data
         emptyDir: {}
-        image: "${IMAGE}"
-        ports:
-        - containerPort: 80
