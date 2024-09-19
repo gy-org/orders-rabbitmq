@@ -50,6 +50,7 @@ kind: StatefulSet
 metadata:
   name: ${APP_NAME}
   labels:
+    app: ${APP_NAME}
     helm.sh/chart: orders-0.0.1
     app.kubernetes.io/name: orders
     app.kubernetes.io/instance: orders
